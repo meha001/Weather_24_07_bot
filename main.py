@@ -1,10 +1,17 @@
 import telebot
 import requests
 import json
+import os
+from dotenv import load_dotenv
 
-API = '61707cade23979320ec02eb97108c139'
+load_dotenv()
+API = os.getenv("API")
 
-bot = telebot.TeleBot("7630130715:AAFiLkBzSaRFvRjzhHmp5YYK9m9UFCd0-mI")
+load_dotenv()
+TOKEN_BOT = os.getenv("TOKEN_BOT")
+
+
+bot = telebot.TeleBot(TOKEN_BOT)
 
 @bot.message_handler(commands = ['start'])
 def start(message):

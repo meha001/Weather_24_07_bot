@@ -33,3 +33,5 @@ def get_weather(message):
 
 bot.polling(none_stop = True)
 
+
+#el,l;,l;lms;mdlml;vmlmmldsml;vml;smv;lms;vm;lsmv s;lvmlsm;lvmslmvms;lvm;lsmvlms;lmvv
